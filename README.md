@@ -1,3 +1,35 @@
+# Your sun app
+
+Your UK Weather Sunshine Forecast app is now up and running! 
+
+To run it locally run:
+
+```
+npm run dev
+```
+
+Here's what I've built for you:
+
+1. A React application that displays sunshine hours forecast for the next 30 days
+2. A grid visualization where each dot represents a day, with the color indicating the amount of sunshine
+3. A color legend explaining what each shade represents (from gray for minimal sunshine to bright orange for maximum sunshine)
+
+The app structure:
+- `weatherService.ts`: Contains logic to fetch and mock sunshine data (currently using simulated data)
+- `SunshineGrid.tsx`: The main component that renders the grid of colored dots
+- `SunshineGrid.css`: Styling for the grid component
+- `App.tsx`: Main application component
+- `App.css`: Application-wide styling
+
+To use the app:
+1. Navigate to the URL shown in your terminal (likely http://localhost:5173/)
+2. You'll see a grid of 30 colored dots representing the expected sunshine hours for each day
+3. Hover over any dot to see the exact date and sunshine hours
+
+For a real implementation, you would need to register for an API key from the Met Office and replace the mock data generator with actual API calls.
+The app is already running in development mode. To build for production, you can run:
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
